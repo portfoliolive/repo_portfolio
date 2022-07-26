@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+body{
+    font-family: sans-serif;   
+    background-color:darkseagreen;
+    width: 100%;
+    padding-top: 5em;
+    height: 100%;   
+}
+
+@font-face{
+    font-family:ITCEDSCR;
+    src:url("ITCEDSCR.TTF");    
+}
+
+#nav_menu{ 
+    scroll-behavior: smooth;
+    position: sticky;    
+    top:0; 
+    left: 0;
+    width: 96%;
+    padding: .5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family:sans-serif;
+    background-color: aqua;
+    background-color: black;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 2fr 3fr;
+    overflow-x: hidden;
+    z-index: +10;
+}
+
+#navul::before,#socialul::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;  
+}
+
+#socialul,#navul{
+    display:inline-block;
+    width: 100%;    
+    list-style-type: none;
+    padding-inline-start: 0px;
+    margin-block-end:0px;
+    margin-block-start:0px;
+    height: 100%;   
+}
+
+#navul #contact{
+    margin-right: 0px;
+}
+
+#socialul{     
+    text-align: end;   
+}
+
+#navul li{
+    display: inline-block;
+    width:auto;   
+    vertical-align: middle;
+    margin-left: -0.5ch;
+    word-spacing: -2px;
+    border-radius: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    box-shadow:  1px 1px 1px 1px blue;
+    background-color: aquamarine;
+    margin-right: 1%;
+}
+
+#navul li:hover{
+    transform: translateY(5%);
+    box-shadow:  1px 1px 1px 1px red;
+    background-color:forestgreen;
+    cursor:pointer;
+    color: white; 
+}
+
+#navul li div{
+    display: inline-block;
+}
+
+#navul a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+#socialul li::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    
+}
+#socialul li{
+    display: inline-block;
+    width: auto; 
+    text-align: center; 
+    vertical-align: middle;
+    margin-left: -0.5ch;
+    height: 100%;
+    margin-right: 10px;
+}
+
+#socialul li.last{
+  margin-right: 0px;
+}
+
+#socialul li i{
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+#brandlogo::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#brandlogo{
+    display: inline-block;
+    margin: 0px;
+    height: 100%;  
+    text-align: center;
+}
+
+#brandlogo h3{
+    display:inline-block;
+    font-family: itcedscr;    
+    font-size: 1.60em;
+    color: yellow;
+    transition: color 1s 0.2s;
+}
+
+#brandlogo h3:hover{
+    color: gold;
+}
+
+i:hover{
+    cursor:pointer;
+}
+
+.icondiv i{  
+    background-color: aqua;   
+}
+
+.icondiv{
+    line-height: .9;
+}
+
+.icondiv i{
+    line-height: inherit;   
+}
+
+.icondiv a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+section{
+    margin-top: 1em;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 96%;   
+}
+#introdiv{
+    
+}
+#imgdiv{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#introimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    
+}
+#introlines{ 
+    margin-top: 1em;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#introlines div{
+    width: 40%;  
+    text-align:justify;
+}
+
+#outer{
+    width: 60%;
+    border: 2px solid black;
+    
+}
+
+#outer h2{
+    border-bottom: 2px solid black;
+    padding-left: 2%;
+}
+#outer p{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding-left: 2%;
+}
+
+#carddiv{
+    width: 45%;
+    height: 280px;
+    margin-left: 2%;
+    margin-bottom: 2em;
+    padding: .5em 0;
+    border: 1px solid black;
+    text-align: justify;
+    position: relative;
+    padding: .5em;
+}
+#logodiv{
+    text-align: center;
+    margin-bottom: 1em;
+}
+#carddiv a{
+    text-decoration: none;    
+    
+}
+#carddiv p{
+    padding-left: 0;
+}
+#download{
+    width: 100%;
+    text-align: end;
+    position: absolute;
+    bottom: 7px;
+    right: 0px;
+    
+}
+#download span div{
+    display: inline-block;
+    margin-right: 2%;
+    border: 1px solid blue;
+    padding: 2px 4px;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+    border-radius:5px;
+}
+
+#download span div i{
+    margin-left: 5px;
+}
+#download span div:hover{
+    cursor: pointer;
+    transform: translateY(5%);
+}
+
+#topbtn::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+#topbtn{
+    text-align: end;
+    border: 1px solid black;
+    position: fixed;
+    bottom:2.6%;;
+    right: 1%;
+    height: 2.5em;
+    width: 3.2em;
+    text-align: center;
+    background-color:lavender;
+    opacity: 70%;
+    font-weight: 600;
+   
+}
+#topbtn a{
+    text-decoration: none;
+}
+#topbtn:hover{
+    
+    background-color: chartreuse;
+    transform: translateY(5%);
+    cursor: pointer;
+    opacity: 100%;
+}
+
+footer{
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: .2em;
+    background-color: beige;
+}
+#follow div{
+    margin-top: .5em;
+}
+#follow div i{
+    margin-right: 1%;
+    margin-bottom: .5em;
+}
+#follow a{
+    text-decoration: none;
+    color: inherit;
+}
+#mobema{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 5.8% 30%;
+    
+}
+#rights p{
+    text-align: end;
+    font-size: .75em;
+}
+#mobile_menu{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:768px){
+   #nav_menu{
+        display: none;
+    }
+   
+    #mobile_menu{
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+
+    #mobile_menu >h3{
+        color: yellow;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        font-family: itcedscr;
+        font-size: 2em;
+        vertical-align: middle;
+    }
+    
+    .slicknav_nav > div:nth-of-type(1) >ul,.slicknav_nav > div:nth-of-type(3)>ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+    }
+    .slicknav_nav > div:nth-of-type(2){
+        display: none;
+    }
+    .slicknav_nav > div:nth-of-type(3) ul li a{
+        padding: 0;
+        text-decoration: none;       
+    }
+    .slicknav_nav > div:nth-of-type(3) ul li{
+        display: inline-block;
+    }
+    .slicknav_nav > div:nth-of-type(1) ul li{
+        width: 45%;
+        border: 1px solid black;
+        background-color: aqua;
+        color: black;
+        font-weight: 600;
+        margin-top: .1em;
+    }
+    
+    section{
+    margin-top: 1em;
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;   
+}
+    
+    #outer{
+    width: 94%;
+    border: 2px solid black;
+    margin: 0 auto;
+    
+}
+
+#outer h2{
+    border-bottom: 2px solid black;
+    padding-left: 2%;
+}
+#outer p{
+    margin-top: .5em;
+    margin-bottom: .5em;
+    padding-left: 2%;
+}
+
+#carddiv{
+    width: 50%;
+    height: 280px;
+    margin-left: 2%;
+    margin-bottom: 2em;
+    padding: .5em 0;
+    border: 1px solid black;
+    text-align: justify;
+    position: relative;
+    padding: .5em;
+}
+
+
+    
+#mobema{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 10% 50%;
+    
+}
+    
+}
